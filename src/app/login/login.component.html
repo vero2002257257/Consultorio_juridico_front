@@ -1,0 +1,27 @@
+<div class="login-container">
+  <div class="header">
+    <img src="/assets/logo-upb.png" alt="Logo UPB" class="logo">
+    <h1>Consultorio jurídico</h1>
+    <button class="btn-upb" (click)="soyUpb()">Soy UPB</button>
+  </div>
+
+  <div class="login-form">
+    <h2>Iniciar sesión</h2>
+    <form>
+      <div class="input-container">
+        <label for="documento">Nro. Documento</label>
+        <input type="text" id="documento">
+      </div>
+      <div class="input-container">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password">
+      </div>
+      <button class="btn-login" (click)="login()">Iniciar sesión</button>
+      <a href="#" class="forgot-password">Olvide mi contraseña</a>
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>Este es un desarrollo de la Universidad Pontificia Bolivariana, el cual se encuentra debidamente protegido: por favor absténgase de realizar cualquier acto que infrinja los derechos de propiedad intelectual.</p>
+  </div>
+</div>

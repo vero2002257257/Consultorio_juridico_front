@@ -1,0 +1,25 @@
+<div class="usuarios-externos-container">
+    <h2>Usuarios externos</h2>
+    <input type="text" placeholder="Consultar usuario">
+    <table>
+      <thead>
+        <tr>
+          <th>Documento</th>
+          <th>Nombre usuario</th>
+          <th>Teléfono</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{ usuario.documento }}</td>
+          <td>{{ usuario.nombre }}</td>
+          <td>{{ usuario.telefono }}</td>
+          <td>{{ usuario.correo }}</td>
+          <td><button (click)="verExpedientes(usuario)">Ver expedientes</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
